@@ -1,9 +1,12 @@
-# rfsd_analysis_2023_NabiullinaGN
 Промежуточная аттестация №2
 Слушатель: Набиуллина Гульназ
-Цель: анализ набора данных RFSD — финансовая отчётность российских компаний.
+Ссылка на репозиторий: https://github.com/nabgulnaz-ship-it/rfsd_analysis_2023_NabiullinaGN
 
-Загрузка и предобработка данных
+Python 3.9
+Windows 10 Pro
+Библиотеки: pandas,polars,numpy,matplotlib,seaborn,huggingface_hub
+
+Цель: анализ набора данных RFSD — финансовая отчётность российских компаний.
 Источник данных — открытый датасет RFSD на платформе Hugging Face (irlspbru/RFSD). Данные хранятся в формате Apache Parquet с партиционированием по годам. Для анализа выбран срез за 2023 год.
 Пайплайн загрузки:
 - С помощью класса HfApi из библиотеки huggingface_hub выполнила запрос list_repo_files() к репозиторию irlspbru/RFSD (тип: dataset). 
